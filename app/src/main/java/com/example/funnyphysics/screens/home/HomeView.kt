@@ -50,16 +50,7 @@ fun BookItem(info: Info, pvm: PrimaryViewModel) {
                 pvm.navigate(info)
             }
             .padding(vertical = 12.dp), verticalAlignment = Alignment.CenterVertically) {
-//        AsyncImage(
-//            model = info.image,
-//            contentDescription = "",
-//            placeholder = painterResource(id = R.drawable.loading),
-//            error = painterResource(
-//                id = R.drawable.error
-//            ),
-//            modifier = Modifier.width(60.dp),
-//            contentScale = ContentScale.Fit
-//        )
+
         Column(
             Modifier
                 .padding(horizontal = 12.dp)

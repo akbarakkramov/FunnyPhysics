@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 
 @Database(entities = [Info::class], version = 2)
 abstract class AppDatabase : RoomDatabase() {
-    abstract fun getBookDao(): InfoDao
+    abstract fun getInfoDao(): InfoDao
 
     companion object {
         private var instance: AppDatabase? = null

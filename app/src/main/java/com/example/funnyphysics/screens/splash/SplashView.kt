@@ -24,7 +24,7 @@ fun SplashView(navController: NavController) {
         navController.navigate(Screen.Primary.route) {
             popUpTo(navController.graph.id)
         }
-        if (AppDatabase.getInstance(context).getBookDao().getAllInfos().isEmpty()) {
+        if (AppDatabase.getInstance(context).getInfoDao().getAllInfos().isEmpty()) {
             AddInfo(context)
         }
     }

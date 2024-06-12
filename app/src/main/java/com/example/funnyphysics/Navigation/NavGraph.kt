@@ -31,7 +31,7 @@ fun AppNavigation(navController: NavHostController) {
             type = NavType.IntType
         })) {
             val id = it.arguments?.getInt("id")!!
-            val book = db.getBookDao().getInfo(id)
+            val book = db.getInfoDao().getInfo(id)
             val primaryModel = PrimaryModel(db)
             val dvm = DetailViewModel(primaryModel)
             DetailView(dvm = dvm, navController = navController, book)

@@ -39,18 +39,7 @@ fun DetailView(dvm: DetailViewModel, navController: NavController, info: Info) {
         IconButton(onClick = { navController.popBackStack() }) {
             Icon(Icons.Rounded.ArrowBack, contentDescription = "")
         }
-//        AsyncImage(
-//            model = info.image,
-//            contentDescription = "",
-//            placeholder = painterResource(id = R.drawable.loading),
-//            error = painterResource(
-//                id = R.drawable.error
-//            ),
-//            modifier = Modifier
-//                .height(140.dp)
-//                .fillMaxWidth(),
-//            contentScale = ContentScale.Fit
-//        )
+
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
             Column {
                 Text(

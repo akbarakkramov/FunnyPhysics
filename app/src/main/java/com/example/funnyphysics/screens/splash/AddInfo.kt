@@ -5,7 +5,7 @@ import android.icu.text.IDNA.Info
 import com.example.funnyphysics.database.AppDatabase
 
 fun AddInfo(context: Context) {
-    val books = listOf(
+    val infos = listOf(
         com.example.funnyphysics.database.Info(
             name = "Funny Fact1",
             author = "Author 1",
@@ -50,8 +50,8 @@ fun AddInfo(context: Context) {
         ),
 
     )
-    val dao = AppDatabase.getInstance(context).getBookDao()
-    books.forEach {
+    val dao = AppDatabase.getInstance(context).getInfoDao()
+    infos.forEach {
         dao.insertInfo(it)
     }
 }
